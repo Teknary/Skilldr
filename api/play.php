@@ -467,31 +467,79 @@ a{
   padding: 0px;
 }
 }
+  
+.control-container {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  background-color: #000c15; /* Optional background */
+  width: 100%;
+  justify-content: center;
+  box-shadow: 15px 0px 3px rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.rectangle-control {
+  background-color: #000c15; /* Your preferred color */
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.rectangle-control:hover {
+  background-color: #001728; /* Slightly darker color on hover */
+  color: #de5b00;
+}
+.header_mobile{
+    display: none;
+    text-align: center;
+    justify-content: center;
+}
+@media screen and (max-width:1023px) {
+    .control-container{
+        display: flex;
+    }
+    .header_computer{
+        display: none;
+    }
+    .header_mobile{
+        display: flex;
+    }
+    footer{
+        display: none;
+    }
+}
 </style>
 
 </head>
 <body style="background-color: #000c15;">
     <div class="content">
 
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-<br><br><br>
-  
-        <br><br>
-        <a href="../html/code/intro.html">Return</a>
-        <a href="../index.html">Home</a>
-        <a href="../index.html#about">About Us</a>
-        <a href="../index.html#courses">Courses</a>
-        
-
-</div>
-    <header id="body">
+    <header class="header_mobile">
         
        
-    <a class="logo"  href="../index.html">
+        <a class="logo" href="../index.html">
+    
+SKILLDR        
 
-    SKILLDR
-    </a>
+</a>
+             
+        </header>
+
+    <header class="header_computer">
+        
+       
+    <a class='logo' href="../index.html">
+
+SKILLDR    </a>
 <div class="chrme">
             <form method="get" action="result.php" style="display: flex; justify-content: center;" class="search_form">
                 <input
@@ -516,7 +564,11 @@ a{
          <h3><i class="fas fa-backward"></i></h3>
          </a>
          
-         
+         <a id="redirectButton"
+         style="color: #de5b00;font-size: 1.5em;margin-right:10px;">
+         <h3><i class="fa fa-play-circle"></i></h3>
+         </a>
+                  
          <a href="../html/favVids.html" style="color: #de5b00;font-size: 1.5em;margin-right:10px;">
          <h3><i class="fas fa-heart"></i></h3>
          </a>
@@ -530,6 +582,8 @@ a{
          </a>
       </div>
     </header>
+
+    
     <div id="warn" class="alert alert-warning">
             <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
            <strong>Warning:</strong> You haven't signed in yet.
@@ -1129,7 +1183,41 @@ displayComments();
 
 </div>
 </footer>
+
+
+
+<div class="control-container">
+
+<div class="rectangle-control" >
+    <a id="redirectButton2"
+    style="color: #ffffff;">
+    <h2><i class="fa fa-play-circle"></i></h2>
+    </a>
 </div>
+
+<div class="rectangle-control" >
+    <a href="../index.html" style="color: #ffffff;">
+        <h2><i class="fas fa-home"></i></h2>
+    </a>
+</div>
+
+<div class="rectangle-control" >
+    <a href="../html/favVids.html" style="color: #ffffff;">
+        <h2><i class="fas fa-heart"></i></h2>
+    </a>            
+</div>
+
+<div class="rectangle-control" >
+    <a href="../html/controls.html" style="color: #ffffff;">
+        <h2><i class="fas fa-cog"></i></h2>
+    </a>
+</div>
+
+</div>
+
+</div>
+
+<script src="../js/lasturl2.js"></script>
 
 <script>
     // Disable right-click context menu

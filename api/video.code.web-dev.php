@@ -547,34 +547,36 @@ SKILLDR    </a>
 </footer>
 
 
+
 <div class="control-container">
 
 <div class="rectangle-control" >
     <a id="redirectButton2"
     style="color: #ffffff;">
-    <h4><i class="fa fa-play-circle"></i> <br> Watch</h4>
+    <h2><i class="fa fa-play-circle"></i></h2>
     </a>
 </div>
 
 <div class="rectangle-control" >
     <a href="../index.html" style="color: #ffffff;">
-        <h4><i class="fas fa-home"></i> <br> Home</h4>
+        <h2><i class="fas fa-home"></i></h2>
     </a>
 </div>
 
 <div class="rectangle-control" >
     <a href="../html/favVids.html" style="color: #ffffff;">
-        <h4><i class="fas fa-heart"></i> <br> Favorites</h4>
+        <h2><i class="fas fa-heart"></i></h2>
     </a>            
 </div>
 
 <div class="rectangle-control" >
     <a href="../html/controls.html" style="color: #ffffff;">
-        <h4><i class="fas fa-cog"></i> <br> Controls</h4>
+        <h2><i class="fas fa-cog"></i></h2>
     </a>
 </div>
 
 </div>
+
 </div>
 <script src="../js/lasturl2.js"></script>
     <script>
