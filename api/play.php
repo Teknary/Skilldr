@@ -867,7 +867,7 @@ a{
             echo "<a href='../html/donate.html' id='jj' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-donate' style='color:white;'></i> Donate</a>";
             echo "<a href='../html/report.html' id='jj' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-flag' style='color:white;'></i> Report</a>";
             echo "<a href='$channel' target='_blank' id='jj' title='$subs' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fab fa-youtube' style='color:white;'></i> $subs</a>";
-            echo "<a href='#' id='downloadpage' class='buttondown' style='color:white;text-decoration:none;text-align:center;'  download='$videoTitle'><i class='fas fa-download' style='color:white;'></i> Download Page</a>";
+            echo "<a href='#' id='jj' class='buttondown' style='color:white;text-decoration:none;text-align:center;'  download='$videoTitle'><i class='fas fa-download' style='color:white;'></i> Download Page</a>";
             echo "<a id='favButton' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-heart' style='color:white;' ></i> Add To Favorites</a>";
 
             echo "</div>";
