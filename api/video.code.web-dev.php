@@ -286,6 +286,16 @@
         display: none;
     }
 }
+.getit{
+    padding:10px;
+    border-radius:10px;
+    font-weight:bold;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    background-color:#de5b00;
+    color:white;
+}
     </style>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
@@ -514,11 +524,11 @@ SKILLDR    </a>
             }
             ?>
         </div>
+        <br>
+               <a href="../certificates/webdev.test.html"><button class="getit"><i class="fas fa-certificate"></i> GET YOUR CERTIFICATE ?</button></a>
     </div>
 
     <br><br>
-    <h6 style="font-weight: bold;color: white;text-align: center;color:white;">* <a href="../html/Privacy&Policy.html" style="color:white;">Privacy & Policy Terms</a> *</h6>
-    <br>
     <footer style="background-color: #000c15; color: rgb(255, 255, 255); padding: 20px; text-align: center;">
 
 <h4>© Skill<span style="color: #de5b00;">dr.</span> Made By <span style="color: #de5b00;">FEROZ</span></h4>
@@ -544,6 +554,7 @@ SKILLDR    </a>
   </svg>
 </a>
 </div>
+
 </footer>
 
 
