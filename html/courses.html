@@ -235,16 +235,8 @@ SKILLDR            </a>
       
 <div class="main">
 
-<!-- 
-<div class="search">
-  <div class="search">
-    <form action="#CookieCheck=ON_Proccess?DONE?CookieFound=ON_Process?DONE?CookieID=BHv_iboja302">
-      <input autofocus type="text" id="searchInput" placeholder="Search for courses..." onkeyup="filterCourses()">
-    </form>
-  </div>  
-</div> -->
 
-<br><br>
+<br>
 
 
     <h3 class="titlecats" id="tc"><i class="fas fa-medal"></i> Top Courses:</h3>
@@ -377,81 +369,6 @@ SKILLDR            </a>
 
     </div>
     </footer>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const searchInput = document.getElementById('searchInput');
-        const cards = document.querySelectorAll('.card');
-        
-        searchInput.addEventListener('input', function () {
-            const query = searchInput.value.toLowerCase();
-    
-            cards.forEach(card => {
-                const title = card.querySelector('.card-title').textContent.toLowerCase();
-                const description = card.querySelector('.card-text').textContent.toLowerCase();
-    
-                if (title.includes(query) || description.includes(query)) {
-                    card.style.display = 'flex';
-                    document.getElementById("tc").style.display = "none";
-                    document.getElementById("searchtitle").style.display = "block";
-                    if (searchInput.value == ""){
-                        window.location.reload();
-                    }
-                } else {
-                    card.style.display = 'none';
-                    if (searchInput.value == ""){
-                        window.location.reload();
-                    }
-                    document.getElementById("tc").style.display = "none";
-                    document.getElementById("searchtitle").style.display = "block";
-                }
-            });
-        });
-    });
-    </script>
-<script>
-  document.getElementById('searchInput').addEventListener('input', function() {
-      const query = this.value.toLowerCase();
-      const titleCats = document.querySelectorAll('.titlecats');
-      const cards = document.querySelectorAll('.card');
-      const errorSearch = document.getElementById('error_search');
-      let anyVisible = false;
-      
-      if (query) {
-          // Hide the title categories
-          titleCats.forEach(title => title.style.display = 'none');
-          
-          // Loop through the cards and show only those that match the search
-          cards.forEach(card => {
-              const cardTitle = card.querySelector('.card-title').textContent.toLowerCase();
-              if (cardTitle.includes(query)) {
-                  card.style.display = 'block';
-                  anyVisible = true;
-              } else {
-                  card.style.display = 'none';
-              }
-          });
-          
-          // Show error if no cards are visible
-          if (!anyVisible) {
-              errorSearch.style.display = 'block';
-              setTimeout(function() {
-                  location.reload();
-              }, 4000000);
-          } else {
-              errorSearch.style.display = 'none';
-          }
-      } else {
-          // Show the title categories if the search is empty
-          titleCats.forEach(title => title.style.display = 'block');
-  
-          // Show all cards when the search is cleared
-          cards.forEach(card => card.style.display = 'block');
-  
-          // Hide error message
-          errorSearch.style.display = 'none';
-      }
-  });
-  </script>
   
   <script>
     if(window.location.href == "https://skilldr.vercel.app/html/courses.html"){
