@@ -525,7 +525,6 @@ SKILLDR    </a>
             ?>
         </div>
         <br>
-               <a href="../certificates/webdev.test.html"><button class="getit"><i class="fas fa-certificate"></i> GET YOUR CERTIFICATE ?</button></a>
     </div>
 
     <br><br>
