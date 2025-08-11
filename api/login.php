@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['username'] = $row['username'];
 
             // ✅ Redirect to welcome.php (use full path to avoid issues on Vercel)
-            header("Location: https://skilldr.vercel.app/welcome.php");
+            header("Location: https://skilldr.vercel.app/api/welcome.php");
             exit();
         } else {
             echo "Invalid password.";
