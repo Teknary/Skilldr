@@ -3,7 +3,7 @@ session_start();
 require 'db.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $email = $_POST['email'];
+    $email = trim($_POST['email']);
     $password = $_POST['password'];
 
     $sql = "SELECT * FROM users WHERE email = ?";
@@ -15,7 +15,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($row = $result->fetch_assoc()) {
         if (password_verify($password, $row['password'])) {
             $_SESSION['username'] = $row['username'];
-            header("Location: welcome.php");
+
+            // ✅ Redirect to welcome.php (use full path to avoid issues on Vercel)
+            header("Location: https://skilldr.vercel.app/welcome.php");
             exit();
         } else {
             echo "Invalid password.";
@@ -26,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<form method="POST">
+<form method="POST" action="">
     Email: <input type="email" name="email" required><br>
     Password: <input type="password" name="password" required><br>
     <button type="submit">Login</button>
