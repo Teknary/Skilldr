@@ -7,7 +7,7 @@
       href="../imgs/favicon (3).png"
       type="image/x-icon"
     />
-    <title>Video Playing - Skilldr</title>
+    <title>vvv Playing - Skilldr</title>
 
 
     <link rel="stylesheet" type="text/css" href="../css/video.css">
